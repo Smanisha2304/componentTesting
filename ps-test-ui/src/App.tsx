@@ -1,8 +1,8 @@
-
+import { Button } from 'ai-ui-kit'
 
 
 function App() {
-  return "Hello"
+  return (<Button>Click</Button >)
 }
 
 export default App
