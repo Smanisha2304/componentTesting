@@ -13,7 +13,7 @@
     "@chakra-ui/react": "^3.34.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "ai-ui-kit": "^1.0.26",
+    "ai-ui-kit": "file:../../ai-ui-kit/ai-ui-kit-0.1.0.tgz",
     "framer-motion": "^12.38.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
