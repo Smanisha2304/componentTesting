@@ -1,8 +1,14 @@
 import { useState } from 'react';
 import './App.css'
-import { ChatActions, ChatHistory, ChatInput, ChatMessage, ConfigTable, ModelEditor, PromptEditor } from 'ai-ui-kit'
+import { ChatActions, ChatHistory, ChatInput, ChatShell, ChatMessage, ConfigTable, ModelEditor, PromptEditor, FeedbackWidget, LogsTable, UsageCard, AnswerPanel } from 'ai-ui-kit'
+// import { DatePicker } from '@chakra-ui/react';
+import type { LogItem} from 'ai-ui-kit';
+// import { BlockquoteCaption, BlockquoteContent, BlockquoteRoot } from '@chakra-ui/react';
+// import { DatePicker } from 'ai-ui-kit';
 
-function App() {
+
+function App() 
+{
   const columns = [
     { key: "name", label: "Name" },
     { key: "model", label: "Model" },
@@ -13,11 +19,11 @@ function App() {
     { name: "Chat Bot", model: "gpt-4", temperature: 0.7 },
     { name: "Code AI", model: "gpt-4.1", temperature: 0.2 },
   ]
-  type ChatMessage = {
-  id: string;
-  role: "user" | "assistant";
-  content: string;
-};
+  type MessageType = {
+    id: string;
+    role: "user" | "assistant";
+    content: string;
+  };
 
   const handleEdit = (row: any) => console.log("Edit:", row)
   const handleDelete = (row: any) => console.log("Delete:", row)
@@ -27,7 +33,8 @@ function App() {
 
   const handleSavePrompt = (config: any) => console.log("Saved prompt:", config)
   const handleCancelPrompt = () => console.log("Cancelled prompt editor")
-  const [messages, setMessages] = useState<ChatMessage[]>([
+
+  const [messages, setMessages] = useState<MessageType[]>([
     { id: "1", role: "assistant", content: "Welcome! Start typing below..." },
   ]);
 
@@ -46,11 +53,32 @@ function App() {
     }, 500);
   };
 
+  const msg: MessageType = {
+    id: "1",
+    role: "user",
+    content: "Manisha Sharma"
+  };
+
+  const logs: LogItem[] = [
+  {
+    id: "1",
+    message: "API failure",
+    status: "error",
+    latency: 100,
+    timestamp: "10:00 AM"
+  }
+];
+const usageData = {
+  label: "Total Users",
+  value: 1250,
+  description: "Active users this month",
+};
   return (
     <>
-     <br></br>
+      <br />
       <b><p>ConfigTable</p></b>
-      <br></br>
+      <br />
+
       <section>
         <ConfigTable
           columns={columns}
@@ -59,16 +87,20 @@ function App() {
           onDelete={handleDelete}
         />
       </section>
-      <br></br>
+
+      <br />
       <b><p>ModelEditor</p></b>
+
       <section style={{ marginTop: "30px" }}>
         <ModelEditor
           onSave={handleSaveModel}
           onCancel={handleCancelModel}
         />
       </section>
-      <br></br>
+
+      <br />
       <b><p>PromptEditor</p></b>
+
       <section style={{ marginTop: "30px" }}>
         <PromptEditor
           onSave={handleSavePrompt}
@@ -76,39 +108,101 @@ function App() {
           initialValue={{
             title: "Example Prompt",
             description: "This is a sample description",
-            prompt: "Write a short poem about AI."
+            prompt: "Write a short."
           }}
         />
       </section>
-      <br></br>
-      <b><p>ChatActions</p></b>
-      <section>
-           <ChatActions
-  onCopy={() => console.log("Copy clicked")}
-  onRegenerate={() => console.log("Regenerate clicked")}
-  onLike={() => console.log("Liked")}
-  onDislike={() => console.log("Disliked")}
-  size="md" // optional: "sm", "md", or "lg"
-/>
-      </section>
-       <br></br>
-       <p>Chat History</p>
-       <section>
-      <ChatHistory messages={messages} />
-    </section><br></br>
-    <p>Chat Input</p>
-    <section>
-      <ChatInput onSend={handleSendMessage} />
-    </section>
 
-    <p>Chat Message</p>
-    <section>
-      
-    </section>
-       
+      <br />
+      <b><p>ChatActions</p></b>
+
+      <section>
+        <ChatActions
+          onCopy={() => console.log("Copy clicked")}
+          onRegenerate={() => console.log("Regenerate clicked")}
+          onLike={() => console.log("Liked")}
+          onDislike={() => console.log("Disliked")}
+          size="md"
+        />
+      </section>
+
+      <br />
+      {/* <p>Chat History</p>
+
+      <section>
+        <ChatHistory messages={messages} />
+      </section>
+
+      <br />
+      <p>Chat Input</p>
+
+      <section>
+        <ChatInput onSend={handleSendMessage} />
+      </section> */}
+
+      <br />
+      <b><p>Chat Message</p></b>
+
+      <section>
+        <ChatMessage {...msg} />
+      </section> 
+
+      <br />
+      <b><p>ChatShell , Chat History , Chat Input</p></b>
+      <section>
+        
+        <ChatShell header="AI Chat">
+  <ChatHistory messages={messages} />
+  <ChatInput onSend={handleSendMessage} />
+</ChatShell>
+      </section>
+
+<br></br>
+
+<b><p>FEEDBACK WIDGET</p></b>
+
+      <section>
+        <FeedbackWidget></FeedbackWidget>
+      </section>
+
+      <br></br>
+
+<b><p>logsTable</p></b>
+
+      <section>
+        <LogsTable logs={logs}>
+
+        </LogsTable>
+      </section>
+      <br></br>
+      <b><p>User Card </p></b>
+      <section>
+        {/* <UsageCard></UsageCard> */}
+       <UsageCard {...usageData} />
+      </section>
+
+      {/* <b><p>Block Quote caption </p></b>
+      <section>
+       <BlockquoteCaption></BlockquoteCaption>
+      </section>
+       <b><p>Block Quote content</p></b>
+      <section>
+       <BlockquoteContent></BlockquoteContent>
+      </section>
+
+      <b><p>Block Quote Root</p></b>
+      <section>
+       <BlockquoteRoot></BlockquoteRoot>
+      </section> */}
+      <b><p>Answer Panel  </p></b>
+      <section>
+        <AnswerPanel></AnswerPanel>
+      </section>
+
+
     </>
+    
   )
 }
 
 export default App
-
