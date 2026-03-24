@@ -6,45 +6,64 @@ import ChatMeessageTest from '../component-test/chat/ChatMeessageTest'
 import FeedbackWidgetTest from '../component-test/observability/FeedbackWidgetTest'
 import LogsTableTest from '../component-test/observability/LogsTableTest'
 import UsageCardTest from '../component-test/observability/UsageCardTest'
+import DropzoneTest from '../component-test/upload/DropzoneTest'
+import FileQueueTest from '../component-test/upload/FileQueueTest'
+import UploadProgressTest from '../component-test/upload/UploadProgressTest'
 
 
 const ms = () => {
   return (
     <div>
         <section>
-            <p>ConfigTable</p>
+            {/* <p>ConfigTable</p> */}
             <ConfigTable_Test></ConfigTable_Test>
         </section><br></br>
-        <p>ModelEditor</p>
+        {/* <p>ModelEditor</p> */}
         <section>
             <ModelEditorTest></ModelEditorTest>
         </section><br></br>
-         <p>PromptEditor</p>
+         {/* <p>PromptEditor</p> */}
         <section>
             <PromptEditorTest></PromptEditorTest>
         </section><br></br>
-         <p>ChatHistory_Input_Shell</p>
+         {/* <p>ChatHistory_Input_Shell</p> */}
         <section>
           <ChatHistory_Input_Shell_Test/>
-        </section>
+        </section><br></br>
 
-         <p>ChatMesaage</p>
+         {/* <p>ChatMesaage</p> */}
         <section>
           <ChatMeessageTest/>
-        </section>
-        <p>FEEDBACKWIDGED</p>
+        </section><br></br>
+        {/* <p>FEEDBACKWIDGED</p> */}
          <section>
           <FeedbackWidgetTest/>
-        </section>
+        </section><br></br>
 
-        <p>LogsTable</p>
+        {/* <p>LogsTable</p> */}
          <section>
           <LogsTableTest/>
-        </section>
+        </section><br></br>
       
-       <p>UsageCard</p>
+       {/* <p>UsageCard</p> */}
          <section>
           <UsageCardTest/>
+        </section><br></br>
+
+        <p>Dropzone</p>
+         <section>
+          <DropzoneTest/>
+        </section><br></br>
+
+        <p>FileQueue</p>
+         <section>
+          <FileQueueTest/>
+        </section><br></br>
+
+
+        <p>UploadProgress</p>
+         <section>
+          <UploadProgressTest/>
         </section>
     </div>
   )
