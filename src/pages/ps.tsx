@@ -2,7 +2,13 @@ import EmptyStateTest from "../component-test/core/EmptyStateTest"
 import ErrorStateTest from "../component-test/core/ErrorStateTest"
 import LayoutShellTest from "../component-test/core/LayoutShellTest"
 import LoaderTest from "../component-test/core/LoaderTest"
-// import AvatarTest from "../component-test/data-display/AvatarTest"
+import BadgeTest from "../component-test/data-display/BadgeTest"
+import ClipboardTest from "../component-test/data-display/ClipboardTest"
+import DataListTest from "../component-test/data-display/DataListTest"
+import ImageTest from "../component-test/data-display/ImageTest"
+import StatTest from "../component-test/data-display/StatTest"
+// import TableComponentTest from "../component-test/data-display/TableTest"
+import TagExploitTest from "../component-test/data-display/TagTest"
 
 const PS = () => {
   return (
@@ -14,7 +20,14 @@ const PS = () => {
       <LayoutShellTest />
 
       {/* Display Components */}
-      {/* <AvatarTest /> */}
+   
+      <BadgeTest/>
+      <ClipboardTest />
+      <DataListTest/>
+      <ImageTest/>
+      <StatTest/>
+      {/* <TableComponentTest/> */}
+      <TagExploitTest/>
     </>
   )
 }

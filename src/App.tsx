@@ -8,7 +8,7 @@ const App = () => {
 
     <div className="app-layout">
       <PS />
-      <MS/>
+      {/* <MS/> */}
     </div>
 
   </>
