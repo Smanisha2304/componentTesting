@@ -1,11 +1,13 @@
-
+import "./app.css"
 import PS from "./pages/ps"
 
 
 
 const App = () => {
   return <>
-   <PS/>
+    <div className="app-layout">
+      <PS />
+    </div>
   </>
 
 
