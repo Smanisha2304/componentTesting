@@ -1,11 +1,10 @@
-import ButtonTest from "./component-test/button/ButtonTest"
+import PS from "./pages/ps"
+
 
 
 const App = () => {
   return <>
-    {/* ==ps==== */}
-    <ButtonTest />
-    {/* ==ms==== */}
+   <PS/>
   </>
 
 }
