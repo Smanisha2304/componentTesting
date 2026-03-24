@@ -1,10 +1,11 @@
 {
-  "name": "ps-test-ui",
+  "name": "react-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -13,10 +14,10 @@
     "@chakra-ui/react": "^3.34.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "ai-ui-kit": "file:../../ai-ui-kit/ai-ui-kit-0.1.0.tgz",
+    "ai-ui-kit": "file:ai-ui-kit-0.1.0.tgz",
     "framer-motion": "^12.38.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
