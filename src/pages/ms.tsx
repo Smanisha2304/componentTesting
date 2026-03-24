@@ -17,94 +17,61 @@ import InputTest from '../component-test/forms/InputTest'
 import NumberInputTest from '../component-test/forms/NumberInputTest'
 import PasswordInputTest from '../component-test/forms/PasswordInputTest'
 
-
 const ms = () => {
   return (
     <div>
-        <section>
-            {/* <p>ConfigTable</p> */}
-            <ConfigTable_Test></ConfigTable_Test>
-        </section><br></br>
-        {/* <p>ModelEditor</p> */}
-        <section>
-            <ModelEditorTest></ModelEditorTest>
-        </section><br></br>
-         {/* <p>PromptEditor</p> */}
-        <section>
-            <PromptEditorTest></PromptEditorTest>
-        </section><br></br>
-         {/* <p>ChatHistory_Input_Shell</p> */}
-        <section>
-          <ChatHistory_Input_Shell_Test/>
-        </section><br></br>
+      <ConfigTable_Test />
+      <hr />
 
-         {/* <p>ChatMesaage</p> */}
-        <section>
-          <ChatMeessageTest/>
-        </section><br></br>
-        {/* <p>FEEDBACKWIDGED</p> */}
-         <section>
-          <FeedbackWidgetTest/>
-        </section><br></br>
+      <ModelEditorTest />
+      <hr />
 
-        {/* <p>LogsTable</p> */}
-         <section>
-          <LogsTableTest/>
-        </section><br></br>
-      
-       {/* <p>UsageCard</p> */}
-         <section>
-          <UsageCardTest/>
-        </section><br></br>
+      <PromptEditorTest />
+      <hr />
 
-        <p>Dropzone</p>
-         <section>
-          <DropzoneTest/>
-        </section><br></br>
+      <ChatHistory_Input_Shell_Test />
+      <hr />
 
-        <p>FileQueue</p>
-         <section>
-          <FileQueueTest/>
-        </section><br></br>
+      <ChatMeessageTest />
+      <hr />
 
+      <FeedbackWidgetTest />
+      <hr />
 
-        <p>UploadProgress</p>
-         <section>
-          <UploadProgressTest/>
-        </section>
+      <LogsTableTest />
+      <hr />
 
-        <p>CheckerBox</p>
-         <section>
-          <CheckboxTest/>
-        </section>
-        <p>Field</p>
-         <section>
-          <FieldTest/>
-        </section>
+      <UsageCardTest />
+      <hr />
 
-        <p>FieldSet</p>
-         <section>
-          <FieldsetTest/>
-        </section>
+      <DropzoneTest />
+      <hr />
 
-         <p>FormUpload</p>
-         <section>
-          <FileUploadTest/>
-        </section>
+      <FileQueueTest />
+      <hr />
 
-         <p>Input</p>
-         <section>
-          <InputTest/>
-        </section>
-        <br></br>
-        <p>password</p>
-         <section>
-          <PasswordInputTest/>
-        </section>
-        <p>Number</p>
-         <section>
-          <NumberInputTest/>
-        </section>
+      <UploadProgressTest />
+      <hr />
+
+      <CheckboxTest />
+      <hr />
+
+      <FieldTest />
+      <hr />
+
+      <FieldsetTest />
+      <hr />
+
+      <FileUploadTest />
+      <hr />
+
+      <InputTest />
+      <hr />
+
+      <PasswordInputTest />
+      <hr />
+
+      <NumberInputTest />
     </div>
   )
 }
