@@ -2,7 +2,12 @@ import { ChatMessage } from "ai-ui-kit"
 
 const ChatMeessageTest = () => {
 
-     const msg = {
+  type MessageType = {
+    id: string;
+    role: "user" | "assistant";
+    content: string;
+  };
+      const msg: MessageType = {
     id: "1",
     role: "user",
     content: "Manisha Sharma"
