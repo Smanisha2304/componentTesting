@@ -1,12 +1,15 @@
-import ButtonTest from "../component-test/button/ButtonTest"
+import EmptyStateTest from "../component-test/core/EmptyStateTest"
 import ErrorStateTest from "../component-test/core/ErrorStateTest"
+import LayoutShellTest from "../component-test/core/LayoutShellTest"
 import LoaderTest from "../component-test/core/LoaderTest"
 
 const PS = () => {
-  return ( <>
-    <ButtonTest />
+  return (<>
+    {/* Core Components */}
     <LoaderTest />
     <ErrorStateTest />
+    <EmptyStateTest />
+    <LayoutShellTest />
   </>
   )
 }
