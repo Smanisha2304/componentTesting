@@ -38,3 +38,9 @@ body {
   border: 1px solid #e5e7eb; /* soft border instead of shadow */
 
 }
+
+hr{
+  border: none;
+  border-top: 3px solid #e5e7eb; /* soft divider */
+  margin: 16px 0;
+}
