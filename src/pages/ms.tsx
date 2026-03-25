@@ -20,11 +20,6 @@ import RadioTest from '../component-test/forms/RadioTest'
 import SliderTest from '../component-test/forms/SliderTest'
 import SwitchTest from '../component-test/forms/SwitchTest'
 import TagsInputTest from '../component-test/forms/TagsInputTest'
-<<<<<<< HEAD
-=======
-
->>>>>>> b9e4524 (FormCompnent Commit)
-
 
 const ms = () => {
   return (
