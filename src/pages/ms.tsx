@@ -19,13 +19,13 @@ import RadioTest from '../component-test/forms/RadioTest'
 import SliderTest from '../component-test/forms/SliderTest'
 import SwitchTest from '../component-test/forms/SwitchTest'
 import TagsInputTest from '../component-test/forms/TagsInputTest'
-import ConfigTableTest from '../component-test/admin/ConfigTable'
+// import ConfigTableTest from '../component-test/admin/ConfigTable'
 
 const Ms = () => {
   return (
    <>
 
-      <ConfigTableTest />
+      {/* <ConfigTableTest /> */}
       <hr />
 
       <ModelEditorTest />
