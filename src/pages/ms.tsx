@@ -1,4 +1,5 @@
-
+import ModelEditorTest from '../component-test/admin/ModelEditorTest'
+import PromptEditorTest from '../component-test/admin/PromptEditorTest'
 import ChatHistory_Input_Shell_Test from '../component-test/chat/ChatHistory_Input_Shell_Test'
 import ChatMeessageTest from '../component-test/chat/ChatMeessageTest'
 import CheckboxTest from '../component-test/forms/CheckboxTest'
@@ -18,13 +19,11 @@ import RadioTest from '../component-test/forms/RadioTest'
 import SliderTest from '../component-test/forms/SliderTest'
 import SwitchTest from '../component-test/forms/SwitchTest'
 import TagsInputTest from '../component-test/forms/TagsInputTest'
-import PromptEditorTest from '../component-test/admin/PromptEditorTest'
-import ModelEditorTest from '../component-test/admin/ModelEditorTest'
-import ConfigTableTest from '../component-test/admin/ConfigTableTest'
+import ConfigTableTest from '../component-test/admin/ConfigTable'
 
 const Ms = () => {
   return (
-    <div>
+   <>
 
       <ConfigTableTest />
       <hr />
@@ -78,21 +77,18 @@ const Ms = () => {
       <hr />
 
       <NumberInputTest />
-      <hr />
+      <hr/>
 
-      <RadioTest />
-      <hr />
+       <RadioTest />
+      <hr/>
+       <SliderTest />
+      <hr/>
+       <SwitchTest />
+      <hr/>
+       <TagsInputTest />
+      <hr/>
+    </>
 
-      <SliderTest />
-      <hr />
-
-      <SwitchTest />
-      <hr />
-
-      <TagsInputTest />
-      <hr />
-
-    </div>
   )
 }
 
