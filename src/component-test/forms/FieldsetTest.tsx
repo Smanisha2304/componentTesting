@@ -3,6 +3,7 @@ import { Fieldset } from "ai-ui-kit";
 import { Checkbox } from "ai-ui-kit";
 
 const FieldsetTest = () => {
+   
   const [selected, setSelected] = useState<string[]>([]);
 
   const handleChange = (value: string, checked: boolean) => {
@@ -17,6 +18,7 @@ const FieldsetTest = () => {
 
   return (
     <div>
+      <p>Fieldeset</p>
       <Fieldset
         legend="Select at least one option"
         errorText={hasError ? "You must select at least one" : undefined}

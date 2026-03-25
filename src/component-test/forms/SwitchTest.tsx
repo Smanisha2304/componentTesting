@@ -3,9 +3,10 @@ import { Field, Switch } from "ai-ui-kit";
 
 const SwitchTest = () => {
   const [enabled, setEnabled] = useState(false);
-
+ 
   return (
     <div style={{ maxWidth: 400, padding: 20 }}>
+      <p>Switch</p>
       <Field
         label="Enable notifications"
         helperText="Turn on to receive alerts"

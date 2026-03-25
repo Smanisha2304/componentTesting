@@ -1,6 +1,6 @@
 import { ConfigTable } from 'ai-ui-kit'
 
-const ButtonTest = () => {
+const ConfigTableTest = () => {
 
     const columns = [
     { key: "name", label: "Name" },
@@ -33,4 +33,4 @@ const ButtonTest = () => {
   )
 }
 
-export default ButtonTest
+export default ConfigTableTest

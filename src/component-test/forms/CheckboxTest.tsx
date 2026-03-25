@@ -7,6 +7,7 @@ const CheckboxTest = () => {
      const [agree, setAgree] = useState(false);
   return (
     <div>
+ <p>CheckBox</p>
       <Checkbox
       label="I accept Terms & Conditions"
       description="Required to continue"

@@ -13,12 +13,14 @@ const DropzoneTest = () => {
 //   multiple: true,
 //   maxSize: 5 * 1024 * 1024,
 // };
+
 const createDropzoneProps = (): DropzoneProps => ({
   onFilesSelected: (files) => console.log(files),
   multiple: false,
 });
   return (
     <div>
+      <p>DropeZone</p>
   <Dropzone {...createDropzoneProps()} />;
     </div>
   )

@@ -1,11 +1,11 @@
-import { Card } from "ai-ui-kit"
+import { CardComponent } from "ai-ui-kit"
 
 const CardTest = () => {
     return (
         <>
             <div>CardTest</div>
 
-            <Card
+            <CardComponent
                 headerTitle="User Profile"
                 headerDescription="Basic info"
                 bodyContent={<div>This is body content</div>}

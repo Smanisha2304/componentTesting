@@ -2,6 +2,7 @@ import { FileQueue } from "ai-ui-kit";
 import type { FileQueueItem } from "ai-ui-kit";
 
 const FileQueueTest = () => {
+  
   const files: FileQueueItem[] = [
     {
       id: "1",
@@ -25,6 +26,7 @@ const FileQueueTest = () => {
 
   return (
     <div>
+      <p>FileQueue</p>
       <FileQueue {...fileQueueProps} />
     </div>
   );

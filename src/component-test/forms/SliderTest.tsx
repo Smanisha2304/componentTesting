@@ -4,9 +4,10 @@ import { Field, Slider } from "ai-ui-kit";
 
 const SliderTest = () => {
   const [values, setValues] = useState<number[]>([50]);
-
+ 
   return (
     <div style={{ maxWidth: 400, padding: 20 }}>
+      <p>Slider</p>
       <Field label="Select a value" helperText="Drag the slider">
         <Slider
           value={values}
