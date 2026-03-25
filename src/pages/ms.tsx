@@ -21,110 +21,10 @@ import SwitchTest from '../component-test/forms/SwitchTest'
 import TagsInputTest from '../component-test/forms/TagsInputTest'
 import ConfigTableTest from '../component-test/admin/ConfigTable'
 
-
 const ms = () => {
   return (
     <div>
-      <section>
-        {/* <p>ConfigTable</p> */}
-        <ConfigTableTest></ConfigTableTest>
-      </section><br></br>
-      {/* <p>ModelEditor</p> */}
-      <section>
-        <ModelEditorTest></ModelEditorTest>
-      </section><br></br>
-      {/* <p>PromptEditor</p> */}
-      <section>
-        <PromptEditorTest></PromptEditorTest>
-      </section><br></br>
-      {/* <p>ChatHistory_Input_Shell</p> */}
-      <section>
-        <ChatHistory_Input_Shell_Test />
-      </section><br></br>
 
-      {/* <p>ChatMesaage</p> */}
-      <section>
-        <ChatMeessageTest />
-      </section><br></br>
-      {/* <p>FEEDBACKWIDGED</p> */}
-      <section>
-        <FeedbackWidgetTest />
-      </section><br></br>
-
-      {/* <p>LogsTable</p> */}
-      <section>
-        <LogsTableTest />
-      </section><br></br>
-
-      {/* <p>UsageCard</p> */}
-      <section>
-        <UsageCardTest />
-      </section><br></br>
-
-      <p>Dropzone</p>
-      <section>
-        <DropzoneTest />
-      </section><br></br>
-
-      <p>FileQueue</p>
-      <section>
-        <FileQueueTest />
-      </section><br></br>
-
-
-      <p>UploadProgress</p>
-      <section>
-        <UploadProgressTest />
-      </section>
-
-      <p>CheckerBox</p>
-      <section>
-        <CheckboxTest />
-      </section>
-      <p>Field</p>
-      <section>
-        <FieldTest />
-      </section>
-
-      <p>FieldSet</p>
-      <section>
-        <FieldsetTest />
-      </section>
-
-      <p>FormUpload</p>
-      <section>
-        <FileUploadTest />
-      </section>
-
-      <p>Input</p>
-      <section>
-        <InputTest />
-      </section>
-      <br></br>
-      <p>password</p>
-      <section>
-        <PasswordInputTest />
-      </section>
-      <p>Number</p>
-      <section>
-        <NumberInputTest />
-      </section>
-      <p>radio</p>
-      <section>
-        <RadioTest />
-      </section>
-      <p>slider</p>
-      <section>
-        <SliderTest />
-      </section>
-      <p>switch</p>
-      <section>
-        <SwitchTest />
-      </section>
-      <p>TagsInput</p>
-      <section>
-        <TagsInputTest />
-      </section>
       <ConfigTableTest />
       <hr />
 
@@ -177,6 +77,19 @@ const ms = () => {
       <hr />
 
       <NumberInputTest />
+      <hr />
+
+      <RadioTest />
+      <hr />
+
+      <SliderTest />
+      <hr />
+
+      <SwitchTest />
+      <hr />
+
+      <TagsInputTest />
+
     </div>
   )
 }
