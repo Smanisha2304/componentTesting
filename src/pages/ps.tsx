@@ -1,3 +1,7 @@
+import ButtonTest from "../component-test/button/ButtonTest"
+import CloseButtonTest from "../component-test/button/CloseButtonTest"
+import DownloadTriggerTest from "../component-test/button/downloadButton"
+import IconButtonTest from "../component-test/button/iconButtonTest"
 import EmptyStateTest from "../component-test/core/EmptyStateTest"
 import ErrorStateTest from "../component-test/core/ErrorStateTest"
 import LayoutShellTest from "../component-test/core/LayoutShellTest"
@@ -19,6 +23,12 @@ import CollapsibleTest from "../component-test/disclosure/CollapsibleTest"
 const PS = () => {
   return (
     <>
+      {/* Button */}
+      <ButtonTest /> <hr />
+      <CloseButtonTest /><hr />
+      <DownloadTriggerTest /><hr />
+      <IconButtonTest /><hr />
+
       {/* Core Components */}
 
       <LoaderTest />
