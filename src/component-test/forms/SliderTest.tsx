@@ -1,27 +1,26 @@
-// "use client";
+import { useState } from "react";
+import { Field, Slider } from "ai-ui-kit";
+// import "ai-ui-kit/dist/style.css";
 
-// import { useState } from "react";
-// import { Slider, Field } from "ai-ui-kit";
+const SliderTest = () => {
+  const [values, setValues] = useState<number[]>([50]);
 
-// const SliderTest = () => {
-//   const [value, setValue] = useState(50); // initial value
+  return (
+    <div style={{ maxWidth: 400, padding: 20 }}>
+      <Field label="Select a value" helperText="Drag the slider">
+        <Slider
+          value={values}
+          onValueChange={(details) => setValues(details.value)}
+          min={0}
+          max={100}
+          step={1}
+          showValue
+          style={{ width: "100%" }}
+        />
+        <p>Selected Value: {values[0]}</p>
+      </Field>
+    </div>
+  );
+};
 
-//   return (
-//     <div style={{ maxWidth: 400, padding: 20 }}>
-//       <Field label="Select a value" helperText="Drag the slider">
-//         <Slider
-//           value={value} // must be number
-//           onChange={(val: number) => setValue(val)} // val is always a number
-//           min={0}
-//           max={100}
-//           step={1}
-//           showValue // shows the current value next to label
-//         />
-//       </Field>
-
-//       <p>Selected Value: {value}</p>
-//     </div>
-//   );
-// };
-
-// export default SliderTest;
+export default SliderTest;
