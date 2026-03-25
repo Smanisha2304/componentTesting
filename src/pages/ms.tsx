@@ -16,6 +16,10 @@ import FileUploadTest from '../component-test/forms/FileUploadTest'
 import InputTest from '../component-test/forms/InputTest'
 import NumberInputTest from '../component-test/forms/NumberInputTest'
 import PasswordInputTest from '../component-test/forms/PasswordInputTest'
+import RadioTest from '../component-test/forms/RadioTest'
+import SliderTest from '../component-test/forms/SliderTest'
+import SwitchTest from '../component-test/forms/SwitchTest'
+import TagsInputTest from '../component-test/forms/TagsInputTest'
 
 
 const ms = () => {
@@ -104,6 +108,22 @@ const ms = () => {
         <p>Number</p>
          <section>
           <NumberInputTest/>
+        </section>
+        <p>radio</p>
+         <section>
+          <RadioTest/>
+        </section>
+        <p>slider</p>
+         <section>
+          <SliderTest/>
+        </section>
+        <p>switch</p>
+         <section>
+         <SwitchTest/>
+        </section>
+        <p>TagsInput</p>
+         <section>
+          <TagsInputTest/>
         </section>
     </div>
   )
