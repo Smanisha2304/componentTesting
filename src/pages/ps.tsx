@@ -11,6 +11,7 @@ import ImageTest from "../component-test/data-display/ImageTest"
 import StatTest from "../component-test/data-display/StatTest"
 // import TableComponentTest from "../component-test/data-display/TableTest""
 import TagExploitTest from "../component-test/data-display/TagTest"
+import DatePickerTest from "../component-test/date-picker/date-picker"
 import AccordionTest from "../component-test/disclosure/AccordionTest"
 import CarouselTest from "../component-test/disclosure/CarouselTest"
 import CollapsibleTest from "../component-test/disclosure/CollapsibleTest"
@@ -19,6 +20,7 @@ const PS = () => {
   return (
     <>
       {/* Core Components */}
+
       <LoaderTest />
       <hr />
       <ErrorStateTest />
@@ -43,6 +45,9 @@ const PS = () => {
       <AccordionTest />  <hr />
       <CarouselTest />  <hr />
       <CollapsibleTest />   <hr />
+
+      {/* Date Time Components */}
+      <DatePickerTest />  <hr />
 
     </>
   )
