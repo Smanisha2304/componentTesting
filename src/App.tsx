@@ -1,6 +1,5 @@
 import "./app.css"
 import PS from "./pages/ps"
-
 import MS from './pages/ms'
 
 const App = () => {

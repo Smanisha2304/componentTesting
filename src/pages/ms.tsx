@@ -125,6 +125,58 @@ const ms = () => {
          <section>
           <TagsInputTest/>
         </section>
+      <ConfigTable_Test />
+      <hr />
+
+      <ModelEditorTest />
+      <hr />
+
+      <PromptEditorTest />
+      <hr />
+
+      <ChatHistory_Input_Shell_Test />
+      <hr />
+
+      <ChatMeessageTest />
+      <hr />
+
+      <FeedbackWidgetTest />
+      <hr />
+
+      <LogsTableTest />
+      <hr />
+
+      <UsageCardTest />
+      <hr />
+
+      <DropzoneTest />
+      <hr />
+
+      <FileQueueTest />
+      <hr />
+
+      <UploadProgressTest />
+      <hr />
+
+      <CheckboxTest />
+      <hr />
+
+      <FieldTest />
+      <hr />
+
+      <FieldsetTest />
+      <hr />
+
+      <FileUploadTest />
+      <hr />
+
+      <InputTest />
+      <hr />
+
+      <PasswordInputTest />
+      <hr />
+
+      <NumberInputTest />
     </div>
   )
 }
