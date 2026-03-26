@@ -12,20 +12,21 @@ const BarChartTest = () => {
       <div>BarChartTest</div>
 
       <BarChart
-    
         data={data}
         xKey="month"
+
         height={300}
         barSize={30}
         barGap={4}
-        showGrid
+        showAxisLine
+        showGrid 
         showTooltip
-        showLegend
         rounded
-        stacked={false}
         percent={false}
+
         yFormatter={(v) => `${v}`}
         xFormatter={(v) => v}
+
         series={[
           {
             name: "sales",
@@ -39,7 +40,6 @@ const BarChartTest = () => {
           },
         ]}
       />
-
     </>
   )
 }
