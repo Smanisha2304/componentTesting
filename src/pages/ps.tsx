@@ -15,7 +15,7 @@ import ClipboardTest from "../component-test/data-display/ClipboardTest"
 import DataListTest from "../component-test/data-display/DataListTest"
 import ImageTest from "../component-test/data-display/ImageTest"
 import StatTest from "../component-test/data-display/StatTest"
-// import TableComponentTest from "../component-test/data-display/TableTest""
+import TableComponentTest from "../component-test/data-display/TableTest"
 import TagExploitTest from "../component-test/data-display/TagTest"
 import DatePickerTest from "../component-test/date-picker/date-picker"
 import AccordionTest from "../component-test/disclosure/AccordionTest"
@@ -49,7 +49,7 @@ const PS = () => {
       <AvatarTest /> <hr />
       <StatTest />  <hr />
       <CardTest /> <hr />
-      {/* <TableComponentTest /> <hr /> */}
+      <TableComponentTest /> <hr />
       <TagExploitTest />  <hr />
 
 
