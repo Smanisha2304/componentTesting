@@ -61,9 +61,9 @@ const PS = () => {
       {/* Date Time Components */}
       <DatePickerTest />  <hr />
 
-      {/* Chart Components */}
+      Chart Components
       <BarChartTest />  <hr />
-      <PieChartTest />  <hr />
+      // <PieChartTest />  <hr />
 
     </>
   )

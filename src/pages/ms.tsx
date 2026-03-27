@@ -20,6 +20,7 @@ import SliderTest from '../component-test/forms/SliderTest'
 import SwitchTest from '../component-test/forms/SwitchTest'
 import TagsInputTest from '../component-test/forms/TagsInputTest'
 import ConfigTableTest from '../component-test/admin/ConfigTable'
+import BlockquoteCaption_Content_rootTest from '../component-test/typography/blockquote/BlockquoteCaption_Content_rootTest'
 
 const ms = () => {
   return (
@@ -89,6 +90,10 @@ const ms = () => {
       <hr />
 
       <TagsInputTest />
+      <hr/>
+
+      <BlockquoteCaption_Content_rootTest/>
+      <hr/>
 
     </div>
   )
